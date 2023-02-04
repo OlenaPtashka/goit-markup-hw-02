@@ -1,0 +1,201 @@
+:root {
+  --color-background-header-main: #e7e9fc;
+  --color-background-main: #e5e5e5;
+  --color-main-light: #ffffff;
+  --color-main-dark: #2e2f42;
+  --color-text-main: #434455;
+  --color-background-light: #f4f4fd;
+  --color-primary-brand: #4d5ae5;
+  --color-pressed-button: #404bbf;
+}
+
+body {
+  background-color: var(--color-background-main);
+  color: var(--color-text-main);
+  font-family: 'Roboto', sans-serif;
+}
+
+/*універсальні класи*/
+
+.list {
+  list-style: none;
+}
+
+/*це заголовки секцій - h2*/
+.section-title {
+  color: var(--color-main-dark);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/*колір секції - позиції учасника команди/проекту*/
+.position {
+  background-color: var(--color-main-light);
+}
+
+/*це назви підрозділів - h3*/
+.title {
+  color: var(--color-main-dark);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/*це опис підрозділів*/ /*колір тексту унаслідувано від body*/
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*Хедер з лого, новігацією та адресою*/
+
+.header {
+  background-color: var(--color-background-header-main);
+}
+
+.logo {
+  color: var(--color-main-dark);
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 44px;
+  height: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1, 33;
+  letter-spacing: 0.03em;
+}
+
+.logo-web {
+  color: var(--color-primary-brand);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-main-dark);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:active,
+.nav-link:hover {
+  color: var(--color-pressed-button);
+}
+
+.nav-link.current {
+  color: var(--color-primary-brand);
+}
+
+.address-link {
+  text-decoration: none;
+  color: var(--color-text-main);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.address-link:focus,
+.address-link:hover {
+  color: var(--color-pressed-button);
+}
+
+/*!!!Головна сторінка - Studio!!!*/
+/*Секція 1 із кнопкою*/
+
+.hero-section {
+  background-color: var(--color-main-dark);
+  color: var(--color-main-light);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.hero-button {
+  background-color: var(--color-primary-brand);
+  color: var(--color-main-light);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--color-pressed-button);
+}
+
+/*Секція 2 без назви з описом стратегії, цілей, компетенцій, технологій - поки без додаткових*/
+
+/*Секція 3  команда*/
+
+.team-section {
+  background-color: var(--color-background-light);
+}
+
+/*!!!Cторінка - Portfolio!!!*/
+
+.portfilio-button {
+  background-color: var(--color-background-light);
+  border-radius: 4px;
+  border-color: 1px solid var(--color-background-header-main);
+  box-sizing: border-box;
+  color: var(--color-primary-brand);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.portfilio-button:hover,
+.portfilio-button:focus {
+  background-color: var(--color-pressed-button);
+  color: var(--color-main-light);
+}
+
+/*Футер*/
+
+.footer {
+  background-color: var(--color-main-dark);
+  color: var(--color-background-header-main);
+}
+
+.footer-logo {
+  color: var(--color-background-light);
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
