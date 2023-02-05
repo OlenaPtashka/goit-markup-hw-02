@@ -1,6 +1,5 @@
 :root {
   --color-background-header-main: #e7e9fc;
-  --color-background-main: #e5e5e5;
   --color-main-light: #ffffff;
   --color-main-dark: #2e2f42;
   --color-text-main: #434455;
@@ -10,7 +9,7 @@
 }
 
 body {
-  background-color: var(--color-background-main);
+  background-color: var(--color-main-light);
   color: var(--color-text-main);
   font-family: 'Roboto', sans-serif;
 }
@@ -87,12 +86,9 @@ body {
 }
 
 .nav-link:active,
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--color-pressed-button);
-}
-
-.nav-link.current {
-  color: var(--color-primary-brand);
 }
 
 .address-link {
@@ -130,6 +126,7 @@ body {
   color: var(--color-main-light);
   border-radius: 4px;
   cursor: pointer;
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
